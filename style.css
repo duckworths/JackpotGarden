@@ -1,0 +1,70 @@
+body {
+  background: radial-gradient(circle at center, #2b2b2b 0%, #000000 100%);
+  font-family: 'Trebuchet MS', sans-serif;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#slot-machine {
+  display: inline-block;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  border: 4px solid #c3a91b; /* gold-like border */
+  border-radius: 15px;
+  margin-top: 50px;
+}
+
+#wheels {
+  margin: 20px 0;
+}
+
+.wheel {
+  display: inline-block;
+  width: 128px;
+  height: 128px;
+  border: 4px solid #c3a91b;
+  border-radius: 10px;
+  background: #1a1a1a;
+  margin: 0 10px;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.wheel img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  background: linear-gradient(to bottom, #555, #333);
+  border: 2px solid #c3a91b;
+  color: #fff;
+  font-size: 1em;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(to bottom, #777, #555);
+}
+
+#info {
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+#info span {
+  font-weight: bold;
+  color: #c3a91b; /* gold color for important text */
+}
+
+/* Optional: Add a subtle glow around wheels */
+.wheel {
+  box-shadow: 0 0 20px rgba(195,169,27,0.5), inset 0 0 10px rgba(0,0,0,0.8);
+}
